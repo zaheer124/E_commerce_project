@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeat Navbar Responsive </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/quries.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .warpper {
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: aliceblue;
+        padding: 10px 2px;
+    }
+
+    header h1 {
+        display: inline-block;
+        font-size: 35px;
+    }
+
+    nav ul a {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 20px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    header i {
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .bar_icon {
+        display: none;
+    }
+
+    .first_hr {
+        opacity: 20%;
+    }
+
+    @media (max-width:375px) {
+        .warpper {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        h1 {
+            margin-left: 28%;
+
+        }
+
+        nav {
+            display: none;
+        }
+
+        .cart_icon {
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .bar_icon {
+            display: inline;
+            position: absolute;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width:600px) {
+        .warpper {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        h1 {
+            margin-left: 38%;
+
+        }
+
+        nav {
+            display: none;
+        }
+
+        .cart_icon {
+            cursor: pointer;
+        }
+
+        .bar_icon {
+            display: inline;
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+</style>
+
+<body>
+    <div class="warpper">
+        <header>
+            <h1>soomro</h1>
+            <nav>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Project</a>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-cart-shopping cart_icon"></i>
+            <div class="bar_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <hr class="first_hr">
+    </div>
+</body>
+
+</html>

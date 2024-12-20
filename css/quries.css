@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    .wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .logo {
+        margin-left: 23%;
+    }
+
+    .item ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color_seven, #333);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .item ul a {
+        display: flex;
+    }
+
+    .bar_icon {
+        display: inline-block;
+        position: absolute;
+        /* left: -50%;   */
+    }
+}
+
+/* @media (min-width: 576px) and (max-width: 767px) {} */
